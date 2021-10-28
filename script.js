@@ -71,5 +71,27 @@ else if (upper && confirmNumber && special) {
 }
 
 
+else if (lower && upper) {
+  userChoices = lowerCase.concat(upperCase);
+  console.log(userChoices);
+}else if (lower && confirmNumber) {
+  userChoices = lowerCase.concat(numbers);
+  console.log(userChoices);
+}else if (lower && special) {
+  userChoices = lowerCase.concat(special);
+  console.log(userChoices);
+}else if (upper && confirmNumber) {
+  userChoices = upperCase.concat(numbers);
+  console.log(userChoices);
+}else if (upper && special) {
+  userChoices = upperCase.concat(special);
+  console.log(userChoices);
+}else if (confirmNumber && special) {
+  userChoices = numbers.concat(special);
+  console.log(userChoices);
+}
+
+
+
 
 }
