@@ -1,9 +1,9 @@
 // Assignment code here
-var passwordLenght;
-var confirmLower;
-var confirmUpper;
+var lenght;
+var lower;
+var upper;
 var confirmNumber;
-var confirmSpecial;
+var special;
 var userChoices;
 
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -31,31 +31,45 @@ generateBtn.addEventListener("click", writePassword);
 //function section
 
 function generatePassword() {
-  passwordLenght = prompt("HOW MANY CHARACTERS WOULD YOU LIKE YOUR PASSWORD? BETWEEN 8 AND 128");
-  console.log("password lengh" + passwordLenght);
-if(!passwordLenght) { 
+  lenght = prompt("HOW MANY CHARACTERS WOULD YOU LIKE YOUR PASSWORD? BETWEEN 8 AND 128");
+  console.log("password lengh" + lenght);
+if(!lenght) { 
   alert("REQUIRED INFORMATION"); 
-}else if (passwordLenght < 8 || passwordLenght > 128){
-  passwordLenght = prompt("YOUR PASSWORD DOES NOT MEET THE CRITERIA (BETWEEN 8 AND 128) ");
-  console.log("password lenght " + passwordLenght);
+}else if (lenght < 8 || lenght > 128){
+  lenght = prompt("YOUR PASSWORD DOES NOT MEET THE CRITERIA (BETWEEN 8 AND 128) ");
+  console.log("password lenght " + lenght);
 } else {
-  confirmUpper = confirm("WOULD YOU LIKE YOUR PASSWORD TO CONTAIN UPPER CASE LETTERS?");
-  console.log("Upper case " + confirmUpper);
-  confirmLower = confirm("WOULD YOU LIKE YOUR PASSWORD TO CONTAIN LOWER CASE LETTERS?");
-    console.log("Lower case " + confirmLower);
+  upper = confirm("WOULD YOU LIKE YOUR PASSWORD TO CONTAIN UPPER CASE LETTERS?");
+  console.log("Upper case " + upper);
+  lower = confirm("WOULD YOU LIKE YOUR PASSWORD TO CONTAIN LOWER CASE LETTERS?");
+    console.log("Lower case " + lower);
     confirmNumber = confirm("WOULD YOU LIKE YOUR PASSWORD TO CONTAIN NUMBERS?");
     console.log("Number " + confirmNumber);
-    confirmSpecial = confirm("WOULD YOU LIKE YOUR PASSWORD TO CONTAIN SPECIAL CHARACTERS?");
-    console.log("Special Character " + confirmSpecial);
+    special = confirm("WOULD YOU LIKE YOUR PASSWORD TO CONTAIN SPECIAL CHARACTERS?");
+    console.log("Special Character " + special);
 };
 
-if (!confirmUpper && !confirmLower && !confirmSpecial && !confirmNumber) {
+if (!upper && !lower && !special && !confirmNumber) {
   userChoices = alert("YOU MUST CHOOSE AT LEAST ONE CRITERIA!");
-} else if (confirmLower && confirmUpper && confirmNumber && confirmSpecial) {
+} else if (lower && upper && confirmNumber && special) {
   userChoices = lowerCase.concat(upperCase, numbers, special);
   console.log(userChoices);
 }
 
-el
+else if (upper && confirmNumber && special) {
+  userChoices = upperCase.concat(numbers, special);
+  console.log(userChoices);
+}else if (lower && upper && special) {
+  userChoices = lowerCase.concat(upperCase, special);
+  console.log(userChoices);
+}else if (lower && upper && confirmNumber) {
+  userChoices = lowerCase.concat(upperCase, numbers);
+  console.log(userChoices);
+}else if (lower && confirmNumber && special) {
+  userChoices = lowerCase.concat(numbers, special);
+  console.log(userChoices);
+}
+
+
 
 }
