@@ -49,6 +49,8 @@ if(!lenght) {
     console.log("Special Character " + special);
 };
 
+
+
 if (!upper && !lower && !special && !confirmNumber) {
   userChoices = alert("YOU MUST CHOOSE AT LEAST ONE CRITERIA!");
 } else if (lower && upper && confirmNumber && special) {
@@ -90,6 +92,22 @@ else if (lower && upper) {
   userChoices = numbers.concat(special);
   console.log(userChoices);
 }
+
+
+else if (lower) {
+  userChoices = lowerCase;
+  console.log(userChoices);
+}else if (upper) {
+  userChoices = blankUpper.concat(upperCase);
+  console.log(userChoices);
+}else if (confirmNumber) {
+  userChoices = numbers;
+  console.log(userChoices);
+}else if (special) {
+  userChoices = special;
+  console.log(userChoices);
+};
+
 
 
 
