@@ -24,3 +24,38 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+
+
+//function section
+
+function generatePassword() {
+  passwordLenght = prompt("HOW MANY CHARACTERS WOULD YOU LIKE YOUR PASSWORD? BETWEEN 8 AND 128");
+  console.log("password lengh" + passwordLenght);
+if(!passwordLenght) { 
+  alert("REQUIRED INFORMATION"); 
+}else if (passwordLenght < 8 || passwordLenght > 128){
+  passwordLenght = prompt("YOUR PASSWORD DOES NOT MEET THE CRITERIA (BETWEEN 8 AND 128) ");
+  console.log("password lenght " + passwordLenght);
+} else {
+  confirmUpper = confirm("WOULD YOU LIKE YOUR PASSWORD TO CONTAIN UPPER CASE LETTERS?");
+  console.log("Upper case " + confirmUpper);
+  confirmLower = confirm("WOULD YOU LIKE YOUR PASSWORD TO CONTAIN LOWER CASE LETTERS?");
+    console.log("Lower case " + confirmLower);
+    confirmNumber = confirm("WOULD YOU LIKE YOUR PASSWORD TO CONTAIN NUMBERS?");
+    console.log("Number " + confirmNumber);
+    confirmSpecial = confirm("WOULD YOU LIKE YOUR PASSWORD TO CONTAIN SPECIAL CHARACTERS?");
+    console.log("Special Character " + confirmSpecial);
+};
+
+if (!confirmUpper && !confirmLower && !confirmSpecial && !confirmNumber) {
+  userChoices = alert("YOU MUST CHOOSE AT LEAST ONE CRITERIA!");
+} else if (confirmLower && confirmUpper && confirmNumber && confirmSpecial) {
+  userChoices = lowerCase.concat(upperCase, numbers, special);
+  console.log(userChoices);
+}
+
+el
+
+}
