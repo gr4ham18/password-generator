@@ -1,18 +1,45 @@
-Requirements:
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
+
+<h1 align="center">Professional README generator </h1>
+  
+![badge](https://img.shields.io/badge/license-none-brightgreen)<br />
+
+## Description
+ Application to facilitate the creation of a unique and random password.
 
 
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+Not required
+## Usage
+- Open link https://gr4ham18.github.io/password-generator/
+ - Click Generate Password
+ - Answer Questions 
+ - Copy your password to clipboard and use it.
+
+## License
+![badge](https://img.shields.io/badge/license-none-brightgreen)
+<br />
+This application is covered by the none license. 
+
+## Contributing
+ gr4ham18
+
+
+
+## Questions
+ reporte issues at my github<br />
+<br />
+Find me on GitHub: [gr4ham18](https://github.com/gr4ham18)<br />
+<br />
+ Email me with any questions: Gr4ham18@gmail.com<br /><br />
+
+
+    
