@@ -1,5 +1,5 @@
 
-<h1 align="center">Professional README generator </h1>
+<h1 align="center">Password generator </h1>
   
 ![badge](https://img.shields.io/badge/license-none-brightgreen)<br />
 
